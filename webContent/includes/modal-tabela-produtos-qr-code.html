@@ -1,0 +1,43 @@
+<!-- 
+	Modal de exibição do QR Code do produto
+	Ativado quando clicado no botão "QR Code" na tabela de produtos
+ -->
+<div id="modalQRCodePainelTabelaProduto" class="modal">
+	<div class="modal-content">
+		<!-- Header -->
+		<div class="modal-header">
+			<span id="closeModalQRCodePainelTabelaProduto" class="close">&times;</span>
+			<h2>{{ modalHeaderQRCodeAtiva }}</h2>
+		</div>
+		
+		<!-- Body -->
+		<div class="modal-body">
+			<br>
+			
+			<center><h3 id="nomeProdutoQRCode"></h3></center>
+			<br>
+			
+			<div id="divQRCodePainelTabelaProdutos" class="flexCenterWrap"></div>
+	
+			<br><br>
+	
+			<div class="flexCenter">
+				<button id="salvarQRCodePainelTabelaProdutos" class="botao" data-anijs="if: mouseover, do: rubberBand animated"><i class="fas fa-download"></i></button>
+			</div>
+
+			<br>
+		</div>
+		
+		<!-- Footer -->
+		<div class="modal-footer">
+			<h3>{{ modalFooterQRCodeAtiva }}</h3>
+		</div>
+  </div>
+</div>
+
+<!-- template do QR Code -->
+<script type="text/template" id="qrcodeTpl1PainelTabelaProdutos">
+	<div class="imgblock">
+		<div class="qr" id="qrcodePainelTabelaProdutos_{i}"></div>
+	</div>
+</script>

@@ -1,0 +1,75 @@
+<!--
+Toogle Menu Mobile
+<i class="fas fa-bars"></i> >> expandir menu
+<i class="fas fa-times"></i> >> desexpandir menu
+ -->
+<i class="fas fa-times toogleMenuVisivel"></i>
+
+<nav id="verticalMenu" class="verticalMenu">
+	<br><br>
+	<ul>
+
+		<!-- 
+			Toogle Menu
+
+		<i class="fas fa-forward"></i> >> expandir menu
+		<i class="fas fa-backward"></i> >> desexpandir menu
+		-->
+		<li id="liToogleMenuVertical">
+			<i id="toogleMenuVertical" class="fas fa-forward"></i>
+		</li>
+
+		<br>
+		<hr>
+		<br>
+
+		<li id="dashboard" class="active">
+			<i class="fas fa-chart-line"></i>
+			<span class="spanBotaoMenuVertical">{{ opcaoDashboardsAtiva }}</span>
+		</li>
+
+		<li id="produtos">
+			<i class="fas fa-clipboard-list"></i>
+			<span class="spanBotaoMenuVertical">{{ opcaoProdutosAtiva }}</span>
+		</li>
+
+		<li id="relatorios">
+			<i class="fas fa-paste"></i>
+			<span class="spanBotaoMenuVertical">{{ opcaoRelatoriosAtiva }}</span>
+		</li>
+
+		<br>
+		<hr>
+		<br>
+					
+		<li id="lojas">
+			<i class="fas fa-store-alt"></i>
+			<span class="spanBotaoMenuVertical">{{ opcaoLojasAtiva }}</span>
+		</li>
+		
+		<li id="scanner">
+			<i class="fas fa-qrcode"></i>
+			<span class="spanBotaoMenuVertical">{{ opcaoScannerAtiva }}</span>
+		</li>
+
+		<br>
+		<hr>
+		<br>
+
+		<li id="configuracoes">
+			<i class="fas fa-cog"></i>
+			<span class="spanBotaoMenuVertical">{{ opcaoConfiguracoesAtiva }}</span>
+		</li>
+
+		<li id="opcaoDeslogar">
+			<i class="fas fa-sign-out-alt"></i>
+			<span class="spanBotaoMenuVertical">{{ opcaoSairAtiva }}</span>
+		</li>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</ul>
+</nav>
