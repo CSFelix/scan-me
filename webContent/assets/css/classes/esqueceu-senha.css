@@ -1,0 +1,4 @@
+/* mensagem de esqueceu senha (página de login) e alteraçã ode senha (painel info) */
+.esqueceuSenha { font-size: 17px; }
+.esqueceuSenha:hover { text-decoration: underline; cursor: pointer; color: var(--style-primary-color); }
+.esqueceuSenha:visited { color: var(--theme-color); }

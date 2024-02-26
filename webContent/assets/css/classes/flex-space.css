@@ -1,0 +1,2 @@
+.flexSpace, .flexSpaceWrap { display: flex; justify-content: space-evenly; align-items: center; }
+.flexSpaceWrap { flex-wrap: wrap; }
