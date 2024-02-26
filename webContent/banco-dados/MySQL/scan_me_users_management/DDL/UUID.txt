@@ -1,0 +1,15 @@
+UUID
+- UUID IN MYSQL
+
+CREATE TABLE test(
+    id BINARY(16) PRIMARY KEY
+);
+
+/ UUID_TO_BIN(UUID()) -- uuid to binary
+/ BIN_TO_UUID(id) -- bin to uuid
+
+- Neo4J
+/ does not support BLOB storage (in really, it supports, but losses a lot of performance)
+/ also, does not support storage UUID as Binary, just in String
+
+14:21:26	alter table cores add constraint fk_cores_uuid_usuario foreign key (uuid_usuario) references usuario(uuid_usuario) /*call ResetChatMe()*/	Error Code: 1822. Failed to add the foreign key constraint. Missing index for constraint 'fk_cores_uuid_usuario' in the referenced table 'usuario'	0.000 sec
