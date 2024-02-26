@@ -1,0 +1,34 @@
+<!-- 
+	Modal com explicações sobre os padrões de cada input na tela inicial de cadastro
+ -->
+<div id="modalEsqueceuSenha" class="modal">
+	<div class="modal-content">
+		<!-- Header -->
+		<div class="modal-header">
+			<span class="close">&times;</span>
+			<h2>{{ modalHeaderAtiva }}</h2>
+		</div>
+		
+		<!-- Body -->
+		<div class="modal-body">
+			<br>
+			
+			<p>{{ conteudoModalAtiva }}</p>
+			
+			<br><hr class="horizontalLine"><br>
+			
+			<center>
+				<button id="botaoModalVoltarAoLogin" class="botao" data-anijs="if: mouseover, do: rubberBand animated">
+					{{ conteudoBotaoVoltarLoginAtiva }}
+				</button>
+			</center>
+			 
+			<br><br>
+		</div>
+		
+		<!-- Footer -->
+		<div class="modal-footer">
+			<h3>{{ modalFooterAtiva }}</h3>
+		</div>
+  </div>
+</div>
