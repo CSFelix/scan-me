@@ -1,0 +1,18 @@
+{
+    "short_name": "ScanMe",
+    "name": "ScanMe",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#363636",
+    "theme-color": "#363636",
+    "background_color": "#f0f8ff",
+    "background-color": "#f0f8ff",
+    "description": "Web Application to promote products and generate QR Codes",
+    "icons": [
+        {
+            "src": "images/logos/icone-padrao.png",
+            "type": "image/png",
+            "sizes": "250x250"
+        }
+    ]
+}
