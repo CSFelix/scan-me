@@ -1,0 +1,35 @@
+/* switch bar */
+.switchEmoji { position: relative; display: inline-block; width: 70px; height: 29.75px; outline: none; }
+
+/* don't show input  */
+.switchEmoji input { opacity: 0; width: 0; height: 0; outline: none; }
+
+/* slider  */
+.sliderRoundEmoji {
+  	position: absolute; cursor: pointer; outline: none;
+  	top: 0; left: 0; right: 0; bottom: 0; border-radius: 34px;
+ 	 -webkit-transition: .4s; transition: .4s;
+  
+  	/* unabled color */
+	background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+/* circle on the slider (switch identifier) */
+.sliderRoundEmoji:before {
+  	position: absolute; content: "🤯"; font-size: 22.75px;
+  	height: 22.75px; width: 22.75px; left: 0px; bottom: 9px;
+  	background-color: transparent; border-radius: 50%;
+  	-webkit-transition: .4s; transition: .4s; outline: none;
+}
+
+/* enabled color  */
+.switchEmoji input:checked + .sliderRoundEmoji { background: linear-gradient(90deg, #9ebd13 0%, #008552 100%); }
+
+/* box-shadow when I click on the switch and make focus */
+.switchEmoji input:focus + .sliderRoundEmoji { box-shadow: 0 0 1px #2196F3; }
+
+/* slider movement  */
+.switchEmoji input:checked + .sliderRoundEmoji:before {
+	content: "🤑"; -webkit-transform: translateX(36px);
+  	-ms-transform: translateX(36px); transform: translateX(36px);
+}

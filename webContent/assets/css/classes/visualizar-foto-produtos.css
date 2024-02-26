@@ -1,0 +1,16 @@
+.selecionarFotoProduto { visibility: hidden; position: absolute; }
+
+.containerFotoProduto {
+	width: 150px; height: 150px; border-radius: 5px;
+	background-size: cover; background-position: center; background-blend-mode: multiply;
+	margin-bottom: 5px; border: 2px solid var(--style-primary-color);
+}
+
+.containerFotoProduto:hover {
+	box-shadow: 0px 0px 5px var(--style-primary-color),
+				0px 0px 10px var(--style-primary-color),
+				0px 0px 20px var(--style-primary-color);
+	cursor: pointer;
+}
+
+.tipSpan { color: var(--style-primary-color); border-radius: 5px; border: 2px dashed var(--style-primary-color); padding: 2px; }

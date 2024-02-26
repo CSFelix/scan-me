@@ -1,0 +1,28 @@
+/* cartão */
+.produtoCartao {
+  	width: 400px; background: var(--background-color); padding: 40px; 
+  	border-radius: 7.5px; box-shadow: 0px 0px 10px var(--theme-color);
+  	margin: 9px;
+}
+
+/* nome produto */
+.produtoCartao h1 { font-size: 22px; margin-bottom: 4px; }
+
+/* vendedor */
+.produtoCartao p { font-size: 17.5px; }
+
+/* imagem/foto */
+.produtoFoto { width: 100%; height: 200px; background-size: cover; background-position: center; }
+.produtoFoto img { width: 100%; height: auto; border: 2px solid black; border-radius: 5px; }
+
+/* tipo principal */
+.produtoTipoPrincipal {  }
+
+/* info, preço e botão */
+.produtoInfo { display: flex; align-items: center; }
+
+.produtoPreco{ font-size: 26px; }
+
+.produtoBotao { margin-left: auto; border: 2px solid; padding: 8px 24px; border-radius: 20px; }
+
+.produtoBotao:hover{ transform: scale(1.06); cursor: pointer; }
